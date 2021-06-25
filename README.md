@@ -2,7 +2,7 @@
  
 ## How to install and run (Windows operating systems):
 
-- Download all files from this repository into a folder on your computer
+- Download all files from this repository and extract them into a folder on your computer so that they are not zipped or compressed
 - Open command prompt
 - Change directory to the folder you just created (command to change directory is "**cd *folderpath***"
 - run the command "**java Blackjack.java**" to start the program
