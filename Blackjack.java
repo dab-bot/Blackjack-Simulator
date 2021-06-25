@@ -8,11 +8,11 @@ public class Blackjack {
 
 	public static void main(String[] args) throws Exception {
 		ArrayList<ArrayList<Integer>> bankAmountLists = new ArrayList<ArrayList<Integer>>();
-		int gains = 0;
-		int losses = 0;
+		//int gains = 0;
+		//int losses = 0;
 		int caps = 0;
 		int brokes = 0;
-		int unevenWins = 0;
+		//int unevenWins = 0;
 		int gameWins = 0;
 		int gameDoubleWins = 0;
 		int gameLosses = 0;
@@ -73,11 +73,13 @@ public class Blackjack {
 					}
 					
 				}
+				/*
 				if(mygame.getPlayer(0).getBank()>mygame.getPlayer(0).getStartingBalance()){
 					gains++;
 				}else{
 					losses++;
 				}
+				*/
 				bankAmountLists.add(bankAmounts);
 				//if(((mygame.getPlayer(0).getLosses()*(-1000))+(mygame.getPlayer(0).getDoubleLosses()*(-2000))+(mygame.getPlayer(0).getBusts()*(-1000))+mygame.getPlayer(0).getWins()*1000+mygame.getPlayer(0).getDoubleWins()*2000+mygame.getPlayer(0).getBlackjacks()*1500)+mygame.getPlayer(0).getStartingBalance()!=mygame.getPlayer(0).getBank())
 				//	unevenWins++;
@@ -92,6 +94,7 @@ public class Blackjack {
 				gamePushes += mygame.getPlayer(0).getPushes();
 			}	
 			
+			myObj.close();
 			
 			try (PrintWriter writer = new PrintWriter(new File("output.csv"))) {
 
